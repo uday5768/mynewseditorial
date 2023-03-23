@@ -1,0 +1,124 @@
+#root {
+  text-align: center;
+  margin: 0 7rem 0 7rem;
+  border: 1px sollid black;
+}
+
+.date-time{
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:gainsboro;
+  border-bottom: 1px solid black;
+}
+
+nav ul{
+  display: flex;
+} 
+
+nav ul li{
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+}
+
+a{
+  text-decoration: none;
+}
+.body-parts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-parts p{
+  color: black;
+  display: flex;
+}
+
+#left-bar{
+  display: block;
+  width: 15rem;
+}
+
+#left-bar-inner2{
+  display: flex;
+  width: 50% 50%;
+}
+#right-bar{
+  display: block;
+  margin-left: 3rem;
+}
+
+figure a{
+  display: flex;
+  width: 80% 20%;
+  text-decoration: none;
+}
+
+figure img{
+  width: 5rem;
+  height: 5rem;
+}
+
+.mobile-menu-icon{
+  display: none;
+}
+
+@media only screen and (max-width: 795px)  {
+  .nav-links{
+    display: none;
+  }
+  .nav-links-mobile{
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: azure;
+    left:0;
+    top: 75px;
+    transition: all 0.5sec ease-out;
+    width: 100%;
+  }
+
+  nav ul li{
+    text-align: center;
+    padding: 3px;
+    width: 100%;
+    transition: all 0.5sec ease;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    outline: none;
+  }
+  .heading{
+    text-align: center;
+  }
+  figure h4{
+    font-size: 1rem;
+  }
+  figure img{
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  #left-bar{
+    display: none;
+  }
+  #right-bar{
+    margin-left: 0;
+  }
+}
+
